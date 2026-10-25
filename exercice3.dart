@@ -13,3 +13,12 @@ void depot(double montant) {
 }
 
 }
+   
+   void main() {
+  var compte = Compte('12345');
+
+  compte.depot(150);
+
+  print('Numero de compte : ${compte.numeroCompte}');
+  print('Solde : ${compte.solde}');
+}
