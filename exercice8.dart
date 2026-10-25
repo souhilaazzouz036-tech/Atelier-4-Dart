@@ -29,3 +29,29 @@ class Roman extends Livre {
     print('Genre: $genre');
   }
 }
+
+
+void main() {
+  var livre1 = Livre('Le Petit Prince', 'Saint-Exupéry');
+  var livre2 = Livre('Les Misérables', 'Victor Hugo');
+
+  livre1.afficherInfos();
+  livre2.afficherInfos();
+
+  var roman1 = Roman(
+    'Sherlock Holmes',
+    'Arthur Conan Doyle',
+    'Policier',
+  );
+
+  var roman2 = Roman(
+    'Orgueil et Préjugés',
+    'Jane Austen',
+    'Romance',
+  );
+
+  roman1.afficherGenre();
+  roman2.afficherGenre();
+
+  Livre.afficherTotal();
+}
